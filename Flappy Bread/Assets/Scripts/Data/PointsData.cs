@@ -11,10 +11,19 @@ public class PointsData : ScriptableObject
     {
         _points += 1;
         PointUpdate?.Invoke(_points);
+        Game.OnEndGame += ResetPoints;
     }
 
     void OnEnable()
     {
-        _points = 0;
+        ResetPoints();
     }
+
+    private void ResetPoints()
+    {
+        _points = 0;
+        PointUpdate?.Invoke(_points);
+    }
+
+
 }

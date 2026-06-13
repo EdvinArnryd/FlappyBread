@@ -13,6 +13,5 @@ public class PlayerStartPosition : MonoBehaviour
     void OnEnable()
     {
         _rectTransform.anchoredPosition = _startPosition;
-        print("Player Enabled");
     }
 }

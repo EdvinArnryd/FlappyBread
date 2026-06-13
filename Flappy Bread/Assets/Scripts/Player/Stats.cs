@@ -5,7 +5,6 @@ public class Stats : MonoBehaviour
 {
     [SerializeField] private PointsData _pointsData;
     private PlayerCollision _playerCol;
-    
 
     void Awake()
     {

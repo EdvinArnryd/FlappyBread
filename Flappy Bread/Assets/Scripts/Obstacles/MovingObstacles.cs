@@ -8,10 +8,12 @@ public class MovingObstacles : MonoBehaviour
     private int _obstacleYTop = 61;
     private int _obstacleYBottom = -179;
     private RectTransform _rectTransform;
+    private float _xStartPos;
 
     void Awake()
     {
         _rectTransform = GetComponent<RectTransform>();
+        _xStartPos = _rectTransform.anchoredPosition.x;
     }
 
     void Start()
@@ -26,6 +28,11 @@ public class MovingObstacles : MonoBehaviour
             _rectTransform.anchoredPosition = new Vector3(_anchoredXSpawnPoint, RandomY(), 0);
         }
         _rectTransform.position += new Vector3(-_speed * Time.deltaTime,0,0);
+    }
+
+    void OnEnable()
+    {
+        _rectTransform.anchoredPosition = new Vector2(_xStartPos, RandomY());
     }
 
     private int RandomY()

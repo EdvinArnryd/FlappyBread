@@ -7,6 +7,7 @@ public class Game : MonoBehaviour
 
     public static event Action OnPauseGame;
     public static event Action OnStartGame;
+    public static event Action OnEndGame;
     [SerializeField] private GameObject[] _startingObjects;
 
     void Awake()
@@ -27,6 +28,12 @@ public class Game : MonoBehaviour
         DeActivateObjects();
         ActivateObjects();
         OnStartGame?.Invoke();
+    }
+
+    public static void EndGame()
+    {
+        Time.timeScale = 1;
+        OnEndGame?.Invoke();
     }
 
     public static void ActivateObjects()

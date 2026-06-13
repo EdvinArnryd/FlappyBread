@@ -15,7 +15,7 @@ public class BackgroundMovement : MonoBehaviour
         _rectTransform = GetComponent<RectTransform>();
     }
 
-    void Update()
+    void LateUpdate()
     {
         if(_rectTransform.anchoredPosition.x <= _worldXTeleportPoint)
         {

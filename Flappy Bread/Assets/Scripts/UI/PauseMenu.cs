@@ -13,7 +13,7 @@ public class PauseMenu : MonoBehaviour
     void Awake()
     {
         Game.OnPauseGame += ActivatePauseMenu;
-        Game.OnStartGame += DeActivatePauseMenu;
+        Game.OnEndGame += DeActivatePauseMenu;
         _pointsData.PointUpdate += UpdatePoints;
     }
 
