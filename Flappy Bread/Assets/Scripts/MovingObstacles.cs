@@ -1,0 +1,35 @@
+using UnityEngine;
+
+public class MovingObstacles : MonoBehaviour
+{
+    [SerializeField] private float _speed = 2f;
+    private float _anchoredXSpawnPoint = 410;
+    private float _anchoredXTeleportPoint = -450;
+    private int _obstacleYTop = 61;
+    private int _obstacleYBottom = -179;
+    private RectTransform _rectTransform;
+
+    void Awake()
+    {
+        _rectTransform = GetComponent<RectTransform>();
+    }
+
+    void Start()
+    {
+        _rectTransform.anchoredPosition = new Vector3(_rectTransform.anchoredPosition.x, RandomY(), 0);
+    }
+
+    void Update()
+    {
+        if(_rectTransform.anchoredPosition.x <= _anchoredXTeleportPoint)
+        {
+            _rectTransform.anchoredPosition = new Vector3(_anchoredXSpawnPoint, RandomY(), 0);
+        }
+        _rectTransform.position += new Vector3(-_speed * Time.deltaTime,0,0);
+    }
+
+    private int RandomY()
+    {
+        return Random.Range(_obstacleYBottom, _obstacleYTop);
+    }
+}
