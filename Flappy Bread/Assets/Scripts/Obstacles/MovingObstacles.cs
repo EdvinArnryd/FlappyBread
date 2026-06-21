@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class MovingObstacles : MonoBehaviour
 {
-    [SerializeField] private float _speed = 2f;
-    private float _anchoredXSpawnPoint = 410;
-    private float _anchoredXTeleportPoint = -450;
-    private int _obstacleYTop = 61;
-    private int _obstacleYBottom = -179;
+    [SerializeField] private float _speed = 5f;
+    private float _anchoredXSpawnPoint = 1000;
+    private float _anchoredXTeleportPoint = -1000;
+    private int _obstacleYTop = 146;
+    private int _obstacleYBottom = -420;
     private RectTransform _rectTransform;
     private float _xStartPos;
 

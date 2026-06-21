@@ -3,8 +3,8 @@ using UnityEngine;
 public class BackgroundMovement : MonoBehaviour
 {
     [SerializeField] private float _speed = 2f;
-    private float _worldXSpawnPoint = 800;
-    private float _worldXTeleportPoint = -800;
+    private float _worldXSpawnPoint = 1920;
+    private float _worldXTeleportPoint = -1920;
 
     private float _allSpeedMultiplier = 5f;
 

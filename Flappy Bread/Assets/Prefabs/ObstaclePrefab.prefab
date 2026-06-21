@@ -210,7 +210,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7896347474664106720}
   - component: {fileID: 4004173546724578207}
-  - component: {fileID: 8661626353508099396}
   m_Layer: 5
   m_Name: ObstaclePrefab
   m_TagString: Untagged
@@ -227,8 +226,8 @@ RectTransform:
   m_GameObject: {fileID: 7514996826270913063}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.29, y: 2.29, z: 2.29}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1747495660610741943}
   - {fileID: 3324887062193038457}
@@ -252,19 +251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e51c06730020be9418a45f1ae879882d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 100
---- !u!114 &8661626353508099396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7514996826270913063}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df5a267354768d541a514c50b91e4051, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  _speed: 200
 --- !u!1 &7631926404742779990
 GameObject:
   m_ObjectHideFlags: 0
