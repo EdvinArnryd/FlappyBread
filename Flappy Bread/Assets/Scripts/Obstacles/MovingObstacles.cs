@@ -28,6 +28,7 @@ public class MovingObstacles : MonoBehaviour
             _rectTransform.anchoredPosition = new Vector3(_anchoredXSpawnPoint, RandomY(), 0);
         }
         _rectTransform.position += new Vector3(-_speed * Time.deltaTime,0,0);
+        // _rectTransform.Translate(-transform.right * _speed * Time.deltaTime);
     }
 
     void OnEnable()

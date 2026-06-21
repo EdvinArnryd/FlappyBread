@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5ce7f112a5c1ce0438092baadeedb237
+guid: 53cff08be3b2ee845a29493609f4661b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9000119032517311319
-    second: FB_D 1_0
+      213: 5806247343882902020
+    second: Pencil_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -24,7 +24,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -57,7 +57,7 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 8
+  textureType: 7
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FB_D 1_0
+      name: Pencil_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9a4c292bc67291380800000000000000
-      internalID: -9000119032517311319
+      spriteID: 40a123a423fe39050800000000000000
+      internalID: 5806247343882902020
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      FB_D 1_0: -9000119032517311319
+      Pencil_0: 5806247343882902020
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
